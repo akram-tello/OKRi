@@ -16,6 +16,9 @@ a {
   --color-default: #364d59;
   --color-primary: #5CB85B;
   --color-secondary: #52565e;
+  --color-primary-rgb: 5, 196, 107;
+  --color-white: #ffffff;
+  --color-white-rgb: 255, 255, 255;
 }
 
 a:hover {
@@ -43,7 +46,7 @@ h6,
   right: 15px;
   bottom: 15px;
   z-index: 99999;
-  background: #68A4C4;
+  background: #5db85b;
   width: 40px;
   height: 40px;
   border-radius: 4px;
@@ -347,7 +350,7 @@ h6,
   top: 0;
   width: 130%;
   height: 95%;
-  background: linear-gradient(241deg,#34a853b3 0%,rgb(124 187 0) 100%), url(../img/hero-bg.jpeg) center top no-repeat;
+  background: linear-gradient(241deg,#34a853b3 0%,rgb(124 187 0) 100%), url(https://okrinstitute.org/wp-content/uploads/2022/01/okr-sprint.jpg) center top no-repeat;
   z-index: 0;
   border-radius: 0 0 50% 50%;
   transform: translateX(-50%) rotate(0deg);
@@ -943,6 +946,8 @@ section {
 
 .okr-courses .okr-course .post-content {
   padding: 30px;
+  background: #fff;
+  border-radius: 0px 0px 10px 10px;
 }
 
 .okr-courses .okr-course .post-title {
@@ -1011,7 +1016,7 @@ section {
 
 .about ul i {
   font-size: 20px;
-  padding-right: 4px;
+  padding-right: 10px;
   color: #68A4C4;
 }
 
@@ -1299,4 +1304,290 @@ section {
 
 #footer .credits a {
   color: #a2cce3;
+}
+
+/*--------------------------------------------------------------
+# Contact Section
+--------------------------------------------------------------*/
+#contact {
+  padding: 60px 0;
+}
+
+#contact .contact-info {
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+#contact .contact-info i {
+  font-size: 48px;
+  display: inline-block;
+  margin-bottom: 10px;
+  color: var(--color-primary);
+}
+
+#contact .contact-info address,
+#contact .contact-info p {
+  margin-bottom: 0;
+  color: #112363;
+}
+
+#contact .contact-info h3 {
+  font-size: 1.5rem;
+  margin-bottom: 15px;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: #112363;
+}
+
+#contact .contact-info a {
+  color: #4869df;
+}
+
+#contact .contact-info a:hover {
+  color: var(--color-primary);
+}
+
+#contact .contact-address,
+#contact .contact-phone,
+#contact .contact-email {
+  margin-bottom: 20px;
+}
+
+@media (min-width: 768px) {
+
+  #contact .contact-address,
+  #contact .contact-phone,
+  #contact .contact-email {
+    padding: 20px 0;
+  }
+}
+
+@media (min-width: 768px) {
+  #contact .contact-address {
+    /* border-left: 1px solid #ddd; */
+    border-right: 1px solid #ddd;
+  }
+  #contact .no-line{
+    border-right: none;
+  }
+}
+
+
+.why-us-all-course .content {
+  padding: 30px;
+  background: linear-gradient(45deg,rgb(52,168,83) 0%,rgb(124,187,0) 100%);
+  border-radius: 4px;
+  color: #fff;
+}
+
+.why-us-all-course .content h3 {
+  font-weight: 700;
+  font-size: 34px;
+  margin-bottom: 30px;
+}
+
+.why-us-all-course .content p {
+  margin-bottom: 30px;
+}
+
+.why-us-all-course .content .more-btn {
+  display: inline-block;
+  background: rgba(255, 255, 255, 0.1);
+  padding: 6px 30px 8px 30px;
+  color: #fff;
+  border-radius: 50px;
+  transition: all ease-in-out 0.4s;
+}
+
+.why-us-all-course .content .more-btn i {
+  font-size: 14px;
+}
+
+.why-us-all-course .content .more-btn:hover {
+  color: #489b61;
+  background: #fff;
+}
+
+.why-us-all-course .icon-boxes .icon-box {
+  text-align: center;
+  border-radius: 10px;
+  background: #fff;
+  box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
+  padding: 40px 30px;
+  width: 100%;
+  transition: 0.3s;
+}
+
+.why-us-all-course .icon-boxes .icon-box i {
+  font-size: 40px;
+  color: #5fcf80;
+  margin-bottom: 30px;
+}
+
+.why-us-all-course .icon-boxes .icon-box h4 {
+  font-size: 20px;
+  font-weight: 700;
+  margin: 0 0 30px 0;
+}
+
+.why-us-all-course .icon-boxes .icon-box p {
+  font-size: 15px;
+  color: #848484;
+}
+
+.why-us-all-course .icon-boxes .icon-box:hover {
+  box-shadow: 0px 5px 25px rgba(0, 0, 0, 0.15);
+}
+
+
+/*--------------------------------------------------------------
+# Pricing
+--------------------------------------------------------------*/
+.pricing .box {
+  padding: 40px 20px;
+  background: #fff;
+  text-align: center;
+  box-shadow: 0px 0 30px rgba(1, 41, 112, 0.08);
+  border-radius: 4px;
+  position: relative;
+  overflow: hidden;
+  transition: 0.3s;
+}
+
+.pricing .box-up {
+  transform: scale(1.1);
+  box-shadow: 0px 0 30px rgba(1, 41, 112, 0.1);
+}
+
+.pricing h3 {
+  font-weight: 700;
+  font-size: 18px;
+  margin-bottom: 15px;
+}
+
+.pricing .price {
+  font-size: 36px;
+  color: #444444;
+  font-weight: 600;
+  font-family: "Poppins", sans-serif;
+}
+
+.pricing .price sup {
+  font-size: 20px;
+  top: -15px;
+  left: -3px;
+}
+
+.pricing .price span {
+  color: #bababa;
+  font-size: 16px;
+  font-weight: 300;
+}
+
+.pricing img {
+  padding: 30px 40px;
+}
+
+.pricing ul {
+  padding: 0;
+  list-style: none;
+  color: #444444;
+  text-align: center;
+  line-height: 26px;
+  font-size: 16px;
+  margin-bottom: 25px;
+}
+
+.pricing ul li {
+  padding-bottom: 10px;
+}
+
+.pricing ul .na {
+  color: #ccc;
+  text-decoration: line-through;
+}
+
+.pricing .btn-buy {
+  display: inline-block;
+  padding: 8px 40px 10px 40px;
+  border-radius: 50px;
+  color: #5db85b;
+  transition: none;
+  font-size: 16px;
+  font-weight: 400;
+  font-family: "Nunito", sans-serif;
+  font-weight: 600;
+  transition: 0.3s;
+  border: 1px solid #5db85b;
+}
+
+.pricing .btn-buy:hover {
+  background: #5db85b;
+  color: #fff;
+}
+
+.pricing .featured {
+  width: 200px;
+  position: absolute;
+  top: 18px;
+  right: -68px;
+  transform: rotate(45deg);
+  z-index: 1;
+  font-size: 14px;
+  padding: 1px 0 3px 0;
+  background: #5db85b;
+  color: #fff;
+}
+
+/*--------------------------------------------------------------
+# CTA2
+--------------------------------------------------------------*/
+.CTA2 .content {
+  background-color: #f6f9ff;
+  padding: 40px;
+}
+
+.CTA2 h3 {
+  font-size: 14px;
+  font-weight: 700;
+  color: #5db85b;
+  text-transform: uppercase;
+}
+
+.CTA2 h2 {
+  font-size: 24px;
+  font-weight: 700;
+  color: var(--color-secondary);
+}
+
+.CTA2 p {
+  margin: 15px 0 30px 0;
+  line-height: 24px;
+}
+
+.btn-read-more {
+  line-height: 0;
+  padding: 12px 32px;
+  border-radius: 25px;
+  transition: 0.5s;
+  color: #fff !important;
+  background: linear-gradient(241deg,#34a853b3 0%,rgb(126, 189, 0) 100%)!important;
+  /* box-shadow: 0px 5px 25px rgba(65, 84, 241, 0.3); */
+}
+
+.btn-read-more span {
+  font-family: "Nunito", sans-serif;
+  font-weight: 500;
+  font-size: 14px;
+  letter-spacing: 1px;
+}
+
+.btn-read-more i {
+  margin-left: 5px;
+  font-size: 18px;
+  transition: 0.3s;
+}
+
+.btn-read-more:hover i {
+  transform: translateX(5px);
 }
