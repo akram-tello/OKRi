@@ -842,7 +842,7 @@
     <div class="row gy-4 justify-content-center" data-aos="fade-left">
 
 
-      <div class="col-lg-3 col-md-6" data-aos="zoom-in" data-aos-delay="200">
+      <div class="col-lg-4 col-md-6" data-aos="zoom-in" data-aos-delay="200">
         <div class="box">
           <h3 style="color: #495057;">Free Plan</h3>
           <div class="price mb-0 pb-0"><sup>$</sup>0<span> / Monthly</span></div>
@@ -854,20 +854,20 @@
             <li class=""> Tasks </li>
             <li class=""> Kanban </li>
             <li class="">Check-ins</li>
-            <li class="">Reporting</li>
+            <li class="mb-5">Reporting</li>
           </ul>
           <a href="#" class="btn-buy">Get started</a>
         </div>
       </div>
 
-      <div class="col-lg-3 col-md-6" data-aos="zoom-in" data-aos-delay="300">
+      <div class="col-lg-4 col-md-6" data-aos="zoom-in" data-aos-delay="300">
         <div class="box box-up">
           <h3 style="color: #495057;">Yearly Plan</h3>
           <span class="featured">Featured</span>
           <div class="price"><sup>$</sup>20<span> / Monthly</span></div>
           <!-- <img src="https://bootstrapmade.com/demo/templates/FlexStart/assets/img/pricing-starter.png" class="img-fluid" alt=""> -->
           <ul>
-            <li>Up to 1 user</li>
+            <li>Up to 10 user</li>
             <li class="">Additional user $ 2.50</li>
             <li class="">Whiteboard</li>
             <li class=""> Tasks </li>
@@ -879,13 +879,13 @@
         </div>
       </div>
 
-      <div class="col-lg-3 col-md-6" data-aos="zoom-in" data-aos-delay="200">
+      <div class="col-lg-4 col-md-6" data-aos="zoom-in" data-aos-delay="200">
         <div class="box">
           <h3 style="color: #495057;">Monthly Plan</h3>
           <div class="price mb-0 pb-0"><sup>$</sup>24<span> / Monthly</span></div>
           <!-- <img src="https://bootstrapmade.com/demo/templates/FlexStart/assets/img/pricing-usiness.png" class="img-fluid" alt=""> -->
           <ul>
-            <li>Up to 1 user</li>
+            <li>Up to 10 user</li>
             <li class="">Additional user $ 3.00</li>
             <li class="">Whiteboard</li>
             <li class=""> Tasks </li>
@@ -902,6 +902,138 @@
   </div>
 
 </section><!-- End Pricing Section -->
+
+<style>
+  /*--------------------------------------------------------------
+# F.A.Q
+--------------------------------------------------------------*/
+.faq {
+  background: #f6f9ff;
+}
+
+
+.faq .faq-list ul {
+  padding: 0;
+  list-style: none;
+}
+
+.faq .faq-list li+li {
+  margin-top: 15px;
+}
+
+.faq .faq-list li {
+  padding: 20px;
+  background: #fff;
+  border-radius: 4px;
+  position: relative;
+}
+
+.faq .faq-list a {
+  display: block;
+  position: relative;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 500;
+  padding: 0 30px;
+  outline: none;
+  cursor: pointer;
+}
+
+.faq .faq-list .icon-help {
+  font-size: 24px;
+  position: absolute;
+  right: 0;
+  left: 20px;
+  color: var(--color-primary);
+}
+
+.faq .faq-list .icon-show,
+.faq .faq-list .icon-close {
+  font-size: 24px;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+.faq .faq-list p {
+  margin-bottom: 0;
+  padding: 10px 0 0 0;
+}
+
+.faq .faq-list .icon-show {
+  display: none;
+}
+
+.faq .faq-list a.collapsed {
+  color: #343a40;
+}
+
+.faq .faq-list a.collapsed:hover {
+  color: var(--color-primary);
+}
+
+.faq .faq-list a.collapsed .icon-show {
+  display: inline-block;
+}
+
+.faq .faq-list a.collapsed .icon-close {
+  display: none;
+}
+
+@media (max-width: 1200px) {
+  .faq .faq-list {
+    padding: 0;
+  }
+}
+
+</style>
+
+<!-- ======= F.A.Q Section ======= -->
+
+<section id="faq" class="faq">
+  <div class="container aos-init aos-animate" data-aos="fade-up">
+    <div class="section-title">
+      <h2>Why leading teams choose okri.io</h2>
+    </div>
+      <div class="row">
+
+          <div class="col-lg-6" style="margin: auto ;">
+            <div class="faq-list">
+              <ul>
+                <li data-aos="fade-up">
+                  <i class="bx bx-help-circle icon-help"></i> <a data-bs-toggle="collapse" class="collapse" data-bs-target="#faq-list-1">
+                    Easy Alignment of Teams
+                    <i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
+                  <div id="faq-list-1" class="collapse show" data-bs-parent=".faq-list">
+                    <p>
+                      Thrive transparency, alignment and break down silo effects in your teams and organization. 
+                    </p>
+                  </div>
+                </li>
+        
+                <li data-aos="fade-up" data-aos-delay="100">
+                  <i class="bx bx-help-circle icon-help"></i> <a data-bs-toggle="collapse" data-bs-target="#faq-list-2" class="collapsed">
+                    Stay Focused
+                    <i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
+                  <div id="faq-list-2" class="collapse" data-bs-parent=".faq-list">
+                    <p>
+                      Get things done via effective check-ins and increase engagement rate of your teams.
+                    </p>
+                  </div>
+                </li>
+        
+              </ul>
+            </div>
+          </div>
+
+          <div class="col-lg-6"><img src="https://flowyteam.test/front/v3/images/flowy-images/support.png" class="img-fluid" alt="" /></div>
+
+      </div>
+    
+  </div>
+
+</section>
+<!-- End F.A.Q Section -->
 
 <!-- testimonial section -->
 <section id="testimonials" class="testimonials">
