@@ -1,13 +1,14 @@
 <!doctype html>
 <html>
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- Google Fonts -->
-    <link
+  <!-- Google Fonts -->
+  <link
     href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Roboto:300,300i,400,400i,500,500i,700,700i&display=swap"
     rel="stylesheet">
-      <!--  CSS Files -->
+  <!--  CSS Files -->
   <link href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" rel="stylesheet">
   <link href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/8.3.2/swiper-bundle.css" rel="stylesheet">
 
@@ -17,10 +18,10 @@
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
   <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
 
-    <!--  Main CSS File -->
-    <link href="assets/css/style.css" rel="stylesheet">
+  <!--  Main CSS File -->
+  <link href="assets/css/style.css" rel="stylesheet">
 
-    <!-- Tailwind cdn -->
+  <!-- Tailwind cdn -->
   <link href="https://cdn.jsdelivr.net/npm/daisyui@2.31.0/dist/full.css" rel="stylesheet" type="text/css" />
   <script src="https://cdn.tailwindcss.com"></script>
   <script>
@@ -34,12 +35,12 @@
       }
     }
     tailwind.module.exports = {
-    plugins: [
-    require('@tailwindcss/typography'),
-    require('@tailwindcss/forms'),
-    require('@tailwindcss/line-clamp'),
-    require('@tailwindcss/aspect-ratio'),
-    ]
+      plugins: [
+        require('@tailwindcss/typography'),
+        require('@tailwindcss/forms'),
+        require('@tailwindcss/line-clamp'),
+        require('@tailwindcss/aspect-ratio'),
+      ]
     }
   </script>
   <style type="text/tailwindcss">
@@ -59,309 +60,307 @@
     }
   </style>
 </head>
+
 <body>
-    <!-- ======= Hero Section ======= -->
-    <style>
-        /*--------------------------------------------------------------
+  <!-- ======= Hero Section ======= -->
+  <style>
+    /*--------------------------------------------------------------
         # Hero Section
         --------------------------------------------------------------*/
-        .hero {
-        width: 100%;
-        min-height: 100vh;
-        background: url("assets/img/okri-bg.jpeg") top center;
-        background-size: cover;
-        position: relative;
-        padding: 120px 0;
-        z-index: 3;
-        }
+    .hero {
+      width: 100%;
+      min-height: 100vh;
+      background: url("assets/img/okri-bg.jpeg") top center;
+      background-size: cover;
+      position: relative;
+      padding: 120px 0;
+      z-index: 3;
+    }
 
-        @media (min-width: 1034px) {
-        .hero:after {
-            position: absolute;
-            content: "";
-            width: 40%;
-            background: #343638;
-            top: 0;
-            bottom: 0;
-        }
-        }
-
-        .hero:before {
+    @media (min-width: 1034px) {
+      .hero:after {
         position: absolute;
         content: "";
-        background: rgba(27, 47, 69, 0.6);
-        inset: 0;
-        }
+        width: 40%;
+        background: #343638;
+        top: 0;
+        bottom: 0;
+      }
+    }
 
-        @media (max-width: 1034px) {
-        .hero:before {
-            background: rgba(27, 47, 69, 0.7);
-        }
-        }
+    .hero:before {
+      position: absolute;
+      content: "";
+      background: rgba(27, 47, 69, 0.6);
+      inset: 0;
+    }
 
-        .hero .container {
-        z-index: 1;
-        }
+    @media (max-width: 1034px) {
+      .hero:before {
+        background: rgba(27, 47, 69, 0.7);
+      }
+    }
 
-        @media (min-width: 1365px) {
-        .hero {
-            background-attachment: fixed;
-        }
-        }
+    .hero .container {
+      z-index: 1;
+    }
 
-        .hero h2 {
-        margin: 0;
-        font-size: 48px;
-        font-weight: 700;
-        line-height: 1.2;
-        color: #fff;
-        font-family: var(--font-secondary);
-        }
+    @media (min-width: 1365px) {
+      .hero {
+        background-attachment: fixed;
+      }
+    }
 
-        .hero blockquote {
-        color: #fff;
-        padding-left: 20px;
-        font-size: 15px;
-        font-family: var(--font-default);
-        border-left: 2px solid var(--color-primary);
-        margin: 40px 0;
-        }
+    .hero h2 {
+      margin: 0;
+      font-size: 48px;
+      font-weight: 700;
+      line-height: 1.2;
+      color: #fff;
+      font-family: var(--font-secondary);
+    }
 
-        .btn-get-started {
-        font-weight: 500;
-        font-size: 14px;
-        letter-spacing: 1px;
-        display: inline-block;
-        padding: 12px 32px;
-        border-radius: 50px;
-        transition: 0.5s;
+    .hero blockquote {
+      color: #fff;
+      padding-left: 20px;
+      font-size: 15px;
+      font-family: var(--font-default);
+      border-left: 2px solid var(--color-primary);
+      margin: 40px 0;
+    }
+
+    .btn-get-started {
+      font-weight: 500;
+      font-size: 14px;
+      letter-spacing: 1px;
+      display: inline-block;
+      padding: 12px 32px;
+      border-radius: 50px;
+      transition: 0.5s;
+      line-height: 1;
+      margin: 10px;
+      color: #fff !important;
+      -webkit-animation-delay: 0.8s;
+      animation-delay: 0.8s;
+      /* border: 2px solid #68A4C4; */
+      background: linear-gradient(241deg, #34a853b3 0%, rgb(126, 189, 0) 100%) !important;
+      /* box-shadow: 0px 5px 25px rgba(65, 84, 241, 0.3); */
+    }
+
+    .btn-get-started-outlite {
+      font-weight: 500;
+      font-size: 14px;
+      letter-spacing: 1px;
+      display: inline-block;
+      padding: 12px 32px;
+      border-radius: 50px;
+      transition: 0.5s;
+      line-height: 1;
+      margin: 10px;
+      color: #fff !important;
+      -webkit-animation-delay: 0.8s;
+      animation-delay: 0.8s;
+      border: 2px solid #7cbb00;
+      background: transparent;
+    }
+
+    .hero .btn-get-started:hover {
+      background: rgba(255, 255, 255, 0.8);
+    }
+
+    .hero .btn-watch-video {
+      font-size: 16px;
+      transition: 0.5s;
+      margin-left: 25px;
+      color: rgba(255, 255, 255, 0.7);
+      font-weight: 600;
+    }
+
+    .hero .btn-watch-video i {
+      color: var(--color-primary);
+      font-size: 32px;
+      transition: 0.3s;
+      line-height: 0;
+      margin-right: 8px;
+    }
+
+    .hero .btn-watch-video:hover {
+      color: #fff;
+    }
+
+    .hero .btn-watch-video:hover i {
+      color: #82cbed;
+    }
+
+    @media (max-width: 640px) {
+      .hero h2 {
+        font-size: 36px;
         line-height: 1;
-        margin: 10px;
-        color: #fff !important;
-        -webkit-animation-delay: 0.8s;
-        animation-delay: 0.8s;
-        /* border: 2px solid #68A4C4; */
-        background: linear-gradient(241deg,#34a853b3 0%,rgb(126, 189, 0) 100%)!important;
-        /* box-shadow: 0px 5px 25px rgba(65, 84, 241, 0.3); */
-        }
+      }
 
-        .btn-get-started-outlite {
-        font-weight: 500;
-        font-size: 14px;
-        letter-spacing: 1px;
-        display: inline-block;
-        padding: 12px 32px;
-        border-radius: 50px;
-        transition: 0.5s;
-        line-height: 1;
-        margin: 10px;
-        color: #fff !important;
-        -webkit-animation-delay: 0.8s;
-        animation-delay: 0.8s;
-        border: 2px solid #7cbb00;
-        background: transparent;
-        }
-
-        .hero .btn-get-started:hover {
-        background: rgba(255, 255, 255, 0.8);
-        }
-
-        .hero .btn-watch-video {
-        font-size: 16px;
-        transition: 0.5s;
-        margin-left: 25px;
-        color: rgba(255, 255, 255, 0.7);
-        font-weight: 600;
-        }
-
-        .hero .btn-watch-video i {
-        color: var(--color-primary);
-        font-size: 32px;
-        transition: 0.3s;
-        line-height: 0;
-        margin-right: 8px;
-        }
-
-        .hero .btn-watch-video:hover {
-        color: #fff;
-        }
-
-        .hero .btn-watch-video:hover i {
-        color: #82cbed;
-        }
-
-        @media (max-width: 640px) {
-        .hero h2 {
-            font-size: 36px;
-            line-height: 1;
-        }
-
-        .hero .btn-get-started,
-        .hero .btn-watch-video {
-            font-size: 13px;
-        }
-        }
-      </style>
-    <section id="hero-2" class="hero d-flex align-items-center">
+      .hero .btn-get-started,
+      .hero .btn-watch-video {
+        font-size: 13px;
+      }
+    }
+  </style>
+  <section id="hero-2" class="hero d-flex align-items-center">
     <div class="container">
-        <div class="row">
+      <div class="row">
         <div class="col-xl-4">
-            <img src="assets/img/okri.png" class="img-fluid" alt="" width="25%">
-            <h2 data-aos="fade-up">Empower your people, scale your business</h2>
-            <blockquote data-aos="fade-up" data-aos-delay="100">
-            <p>OKR software that helps you to boost performance through engaged and strategically focused teams. Give your team members effective tools to unleash their full potential.</p>
-            </blockquote>
-            <div class="d-flex" data-aos="fade-up" data-aos-delay="200">
+          <img src="assets/img/okri.png" class="img-fluid" alt="" width="25%">
+          <h2 data-aos="fade-up">Empower your people, scale your business</h2>
+          <blockquote data-aos="fade-up" data-aos-delay="100">
+            <p>OKR software that helps you to boost performance through engaged and strategically focused teams. Give
+              your team members effective tools to unleash their full potential.</p>
+          </blockquote>
+          <div class="d-flex" data-aos="fade-up" data-aos-delay="200">
             <a href="#" class="btn-read-more d-inline-flex align-items-center justify-content-center align-self-center">
-                <span>Try it Free</span>
-                <i class="bi bi-arrow-right"></i>
+              <span>Try it Free</span>
+              <i class="bi bi-arrow-right"></i>
             </a>
             <a href="#" class="btn-get-started-outlite">Schedule Demo</a>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </section><!-- End Hero Section -->
+
+  <main id="main mt-0 pt-0">
+    <!-- ======= Services Section ======= -->
+
+    <section class="services" style="background-color: #f6f9ff;">
+      <div class="container max-w-screen-xl">
+
+        <div class="section-title">
+          <h2>Tools for High Performing OKR Teams </h2>
+        </div>
+
+        <div class="row">
+
+          <div class="col-md-6 col-lg-4 d-flex align-items-stretch" data-aos="fade-up">
+            <div class="icon-box icon-box-green">
+              <div class="icon"><i class="bi bi-bullseye" style="line-height: 0.1 !important;"></i></div>
+              <h4 class="title" style="text-transform: uppercase;"><a href="https://okrinstitute.org/okr-resources/"
+                  target="_blank" rel="noopener">Objectives & Key Results</a></h4>
+              <p class="description">Align, track, and engage via this agile goal setting system </p>
             </div>
-
-        </div>
-        </div>
-    </div>
-    </section><!-- End Hero Section -->
-
-    <main id="main mt-0 pt-0">
-        <!-- ======= Services Section ======= -->
-
-   <section class="services" style="background-color: #f6f9ff;">
-    <div class="container max-w-screen-xl">
-
-      <div class="section-title">
-        <h2>Features for High Performing OKR Teams </h2>
-      </div>
-
-      <div class="row">
-
-        <div class="col-md-6 col-lg-4 d-flex align-items-stretch" data-aos="fade-up">
-          <div class="icon-box icon-box-green">
-            <div class="icon"><i class="bi bi-bullseye" style="line-height: 0.1 !important;"></i></div>
-            <h4 class="title" style="text-transform: uppercase;"><a href="https://okrinstitute.org/okr-resources/" target="_blank" rel="noopener">Objectives & Key Results</a></h4>
-            <p class="description">Align, track, and engage via this agile goal setting system </p>
           </div>
+
+          <div class="col-md-6 col-lg-4 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="100">
+            <div class="icon-box icon-box-green">
+              <div class="icon"><i class="bi bi-aspect-ratio" style="line-height: 0.1 !important;"></i></div>
+              <h4 class="title" style="text-transform: uppercase;"><a href="https://okrinstitute.org/okr-coaches/"
+                  target="_blank" rel="noopener">Whiteboards</a></h4>
+              <p class="description">Brainstorm and plan your strategies and OKRs with your team members</p>
+            </div>
+          </div>
+
+          <div class="col-md-6 col-lg-4 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="200">
+            <div class="icon-box icon-box-green">
+              <div class="icon"><i class="bi bi-bar-chart" style="line-height: 0.1 !important;"></i></div>
+              <h4 class="title" style="text-transform: uppercase;"><a href="https://okrinstitute.org/all-courses/"
+                  target="_blank" rel="noopener">Key Performance Indicators</a></h4>
+              <p class="description">Measure the health of your teams and organization </p>
+            </div>
+          </div>
+
         </div>
 
-        <div class="col-md-6 col-lg-4 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="100">
-          <div class="icon-box icon-box-green">
-            <div class="icon"><i class="bi bi-aspect-ratio" style="line-height: 0.1 !important;"></i></div>
-            <h4 class="title" style="text-transform: uppercase;"><a href="https://okrinstitute.org/okr-coaches/" target="_blank" rel="noopener">Whiteboards</a></h4>
-            <p class="description">Brainstorm and plan your strategies and OKRs with your team members</p>
-          </div>
-        </div>
+        <div class="row">
 
-        <div class="col-md-6 col-lg-4 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="200">
-          <div class="icon-box icon-box-green">
-            <div class="icon"><i class="bi bi-bar-chart" style="line-height: 0.1 !important;"></i></div>
-            <h4 class="title" style="text-transform: uppercase;"><a href="https://okrinstitute.org/all-courses/" target="_blank" rel="noopener">Key Performance Indicators</a></h4>
-            <p class="description">Measure the health of your teams and organization            </p>
+          <div class="col-md-6 col-lg-4 d-flex align-items-stretch" data-aos="fade-up">
+            <div class="icon-box icon-box-green">
+              <div class="icon"><i class="bi bi-card-checklist" style="line-height: 0.1 !important;"></i></div>
+              <h4 class="title" style="text-transform: uppercase;"><a href="https://okrinstitute.org/okr-resources/"
+                  target="_blank" rel="noopener">Task Management</a></h4>
+              <p class="description">Organize your action plan via task management</p>
+            </div>
           </div>
-        </div>
 
-      </div>
-
-      <div class="row">
-        
-        <div class="col-md-6 col-lg-4 d-flex align-items-stretch" data-aos="fade-up">
-          <div class="icon-box icon-box-green">
-            <div class="icon"><i class="bi bi-card-checklist" style="line-height: 0.1 !important;"></i></div>
-            <h4 class="title" style="text-transform: uppercase;"><a href="https://okrinstitute.org/okr-resources/" target="_blank" rel="noopener">Task Management</a></h4>
-            <p class="description">Organize your action plan via task management</p>
+          <div class="col-md-6 col-lg-4 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="100">
+            <div class="icon-box icon-box-green">
+              <div class="icon"><i class="bi bi-kanban" style="line-height: 0.1 !important;"></i></div>
+              <h4 class="title" style="text-transform: uppercase;"><a href="https://okrinstitute.org/okr-coaches/"
+                  target="_blank" rel="noopener">Kanban</a></h4>
+              <p class="description">Have a transparent overview of your initiatives, tasks, and projects</p>
+            </div>
           </div>
-        </div>
 
-        <div class="col-md-6 col-lg-4 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="100">
-          <div class="icon-box icon-box-green">
-            <div class="icon"><i class="bi bi-kanban" style="line-height: 0.1 !important;"></i></div>
-            <h4 class="title" style="text-transform: uppercase;"><a href="https://okrinstitute.org/okr-coaches/" target="_blank" rel="noopener">Kanban</a></h4>
-            <p class="description">Have a transparent overview of your initiatives, tasks, and projects</p>
+          <div class="col-md-6 col-lg-4 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="200">
+            <div class="icon-box icon-box-green">
+              <div class="icon"><i class="bi bi-clipboard-check" style="line-height: 0.1 !important;"></i></div>
+              <h4 class="title" style="text-transform: uppercase;"><a href="https://okrinstitute.org/all-courses/"
+                  target="_blank" rel="noopener">Reporting</a></h4>
+              <p class="description">Make better & faster business decisions via real-time reports</p>
+            </div>
           </div>
-        </div>
 
-        <div class="col-md-6 col-lg-4 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="200">
-          <div class="icon-box icon-box-green">
-            <div class="icon"><i class="bi bi-clipboard-check" style="line-height: 0.1 !important;"></i></div>
-            <h4 class="title" style="text-transform: uppercase;"><a href="https://okrinstitute.org/all-courses/" target="_blank" rel="noopener">Reporting</a></h4>
-            <p class="description">Make better & faster business decisions via real-time reports</p>
-          </div>
         </div>
 
       </div>
+    </section><!-- End Services Section -->
 
-    </div>
-  </section><!-- End Services Section -->
+    <style>
+      .features-1 .feature-box {
+        padding: 24px 20px;
+        box-shadow: 0px 0 30px rgba(1, 41, 112, 0.08);
+        transition: 0.3s;
+        height: 100%;
+      }
 
-  <style>
-    .features-1 .feature-box {
-    padding: 24px 20px;
-    box-shadow: 0px 0 30px rgba(1, 41, 112, 0.08);
-    transition: 0.3s;
-    height: 100%;
-    }
+      .features-1 .feature-box h3 {
+        font-size: 18px;
+        color: var(--color-default);
+        font-weight: 500;
+        margin: 0;
+      }
 
-    .features-1 .feature-box h3 {
-    font-size: 18px;
-    color: var(--color-default);
-    font-weight: 500;
-    margin: 0;
-    }
+      .features-1 .feature-box i {
+        line-height: 0;
+        background: #ecf3ff;
+        padding: 8px;
+        margin-right: 10px;
+        font-size: 2.2rem;
+        border-radius: 25px;
+        transition: 0.3s;
+        color: #4284F3;
+      }
 
-    .features-1 .feature-box i {
-    line-height: 0;
-    background: #ecf3ff;
-    padding: 4px;
-    margin-right: 10px;
-    font-size: 24px;
-    border-radius: 25px;
-    transition: 0.3s;
-    }
+      .features-1 .feature-box:hover i {
+        background: #e6eeff;
+        color: #4284F3;
+      }
+    </style>
+    <section id="features" class="features-1">
+      <div class="relative max-w-screen-xl px-4 py-8 mx-auto">
+        <div class="section-title">
+          <h2>Features for High Performing OKR Teams </h2>
+        </div>
 
-    .features-1 .feature-box:hover i {
-    background: #eafde7;
-    color: #41cf2e;
-    }
-</style>
-<section id="features" class="features-1">
-<div class="relative max-w-screen-xl px-4 py-8 mx-auto">
-    <div class="section-title">
-        <h2>Features for High Performing OKR Teams </h2>
-      </div>
+        <div class="grid items-start grid-cols-1 gap-2 md:grid-cols-2">
+          <div class="grid grid-cols-1 gap-1 md:grid-cols-1">
+            <img src="assets/img/okr-app.png" class="object-contain w-full rounded-xl mb-5" />
 
-  <div class="grid items-start grid-cols-1 gap-2 md:grid-cols-2">
-    <div class="grid grid-cols-1 gap-1 md:grid-cols-1">
-      <img
-        src="assets/img/okr-app.png"
-        class="object-contain w-full rounded-xl mb-5"
-      />
+            <div class="grid grid-cols-2 gap-2">
+              <img src="assets/img/0f628526-83c0-4a0d-843f-8da291b68626.webp"
+                class="object-contain w-full rounded-xl mb-5" />
 
-      <div class="grid grid-cols-2 gap-2">
-        <img
-          src="assets/img/0f628526-83c0-4a0d-843f-8da291b68626.webp"
-          class="object-contain w-full rounded-xl mb-5"
-        />
+              <img src="assets/img/0f628526-83c0-4a0d-843f-8da291b68626.webp"
+                class="object-contain w-full rounded-xl mb-5" />
 
-        <img
-          src="assets/img/0f628526-83c0-4a0d-843f-8da291b68626.webp"
-          class="object-contain w-full rounded-xl mb-5"
-        />
+              <img src="assets/img/0f628526-83c0-4a0d-843f-8da291b68626.webp"
+                class="object-contain w-full rounded-xl mb-5" />
 
-        <img
-          src="assets/img/0f628526-83c0-4a0d-843f-8da291b68626.webp"
-          class="object-contain w-full rounded-xl mb-5"
-        />
+              <img src="assets/img/0f628526-83c0-4a0d-843f-8da291b68626.webp"
+                class="object-contain w-full rounded-xl mb-5" />
+            </div>
+          </div>
 
-        <img
-          src="assets/img/0f628526-83c0-4a0d-843f-8da291b68626.webp"
-          class="object-contain w-full rounded-xl mb-5"
-        />
-      </div>
-    </div>
+          <div class="sticky top-50">
 
-    <div class="sticky top-50">
-
-      <!-- <div class="flex justify-between mt-8">
+            <!-- <div class="flex justify-between mt-8">
         <div>
           <h1 class="pb-2 mt-3 text-4xl font-extrabold leading-10 tracking-tight text-transparent duration-700 ease-out delay-150 transform bg-clip-text bg-gradient-to-r from-blue-600 via-blue-500 to-purple-600 scale-10 md:my-5 sm:leading-none lg:text-xl xl:text-6xl transition-all visible translate-y-0 scale-100 opacity-100">
             Successful implementation starts with the right support
@@ -369,363 +368,403 @@
         </div>
       </div> -->
 
-      
 
-      <div class="col-lg-12 mt-5 mt-lg-0 d-flex">
-        <div class="row align-self-center gy-4">
-            <div class="col-md-6 aos-init aos-animate" data-aos="zoom-out" data-aos-delay="200">
-                <div class="feature-box d-flex align-items-center">
+
+            <div class="col-lg-12 mt-5 mt-lg-0 d-flex">
+              <div class="row align-self-center gy-4">
+                <div class="col-md-6 aos-init aos-animate" data-aos="zoom-out" data-aos-delay="200">
+                  <div class="feature-box d-flex align-items-center">
                     <i class="bi bi-telephone"></i>
                     <h3>24h Support</h3>
+                  </div>
                 </div>
-            </div>
-            <div class="col-md-6 aos-init aos-animate" data-aos="zoom-out" data-aos-delay="300">
-                <div class="feature-box d-flex align-items-center">
+                <div class="col-md-6 aos-init aos-animate" data-aos="zoom-out" data-aos-delay="300">
+                  <div class="feature-box d-flex align-items-center">
                     <i class="bi bi-tools"></i>
                     <h3>Setting up Support </h3>
+                  </div>
                 </div>
-            </div>
-            <div class="col-md-6 aos-init aos-animate" data-aos="zoom-out" data-aos-delay="400">
-                <div class="feature-box d-flex align-items-center">
+                <div class="col-md-6 aos-init aos-animate" data-aos="zoom-out" data-aos-delay="400">
+                  <div class="feature-box d-flex align-items-center">
                     <i class="bi bi-grid"></i>
                     <h3>Seamless Integrations </h3>
+                  </div>
                 </div>
-            </div>
-            <div class="col-md-6 aos-init aos-animate" data-aos="zoom-out" data-aos-delay="500">
-                <div class="feature-box d-flex align-items-center">
+                <div class="col-md-6 aos-init aos-animate" data-aos="zoom-out" data-aos-delay="500">
+                  <div class="feature-box d-flex align-items-center">
                     <i class="bi bi-display"></i>
                     <h3>OKR Online Training</h3>
+                  </div>
                 </div>
-            </div>
-            <div class="col-md-6 aos-init aos-animate" data-aos="zoom-out" data-aos-delay="400">
-                <div class="feature-box d-flex align-items-center">
+                <div class="col-md-6 aos-init aos-animate" data-aos="zoom-out" data-aos-delay="400">
+                  <div class="feature-box d-flex align-items-center">
                     <i class="bi bi-grid"></i>
-                    <h3>Seamless Integrations </h3>
+                    <h3>Dedicated Customer Success Manager</h3>
+                  </div>
                 </div>
-            </div>
-            <div class="col-md-6 aos-init aos-animate" data-aos="zoom-out" data-aos-delay="500">
-                <div class="feature-box d-flex align-items-center">
+                <div class="col-md-6 aos-init aos-animate" data-aos="zoom-out" data-aos-delay="500">
+                  <div class="feature-box d-flex align-items-center">
                     <i class="bi bi-display"></i>
-                    <h3>OKR Online Training</h3>
+                    <h3>Safe and Secure Data Transfer</h3>
+                  </div>
                 </div>
+              </div>
             </div>
+
+          </div>
         </div>
-    </div>
+    </section>
 
-  </div>
-</div>
-</section>
+    <section class="dark:bg-gray-90f0" style="background-color: #f6f9ff;">
 
-<section class="dark:bg-gray-90f0" style="background-color: #f6f9ff;">
+      <div class="relative flex items-center w-full">
+        <div class="relative z-20 px-8 mx-auto xl:px-5 max-w-7xl">
 
-<div class="relative flex items-center w-full">
-    <div class="relative z-20 px-8 mx-auto xl:px-5 max-w-7xl">
+          <div class="flex flex-col items-center h-full pt-16 pb-15 lg:flex-row">
 
-        <div class="flex flex-col items-center h-full pt-16 pb-15 lg:flex-row">
+            <div
+              class="flex flex-col items-start w-full mb-16 md:items-center lg:pr-12 lg:items-start lg:w-1/2 lg:mb-0">
 
-            <div class="flex flex-col items-start w-full mb-16 md:items-center lg:pr-12 lg:items-start lg:w-1/2 lg:mb-0">
-
-                <!-- <h2 class="text-sm font-semibold tracking-wide text-gray-700 uppercase duration-700 ease-out transform sm:text-base lg:text-sm xl:text-base transition-all visible translate-y-0 scale-100 opacity-100">Welcome to Wave</h2> -->
-                <h2 class="pb-2 mt-3 text-4xl font-extrabold leading-10 tracking-tight text-transparent duration-700 ease-out delay-150 transform bg-clip-text bg-gradient-to-r from-green-500 to-lime-400 scale-10 md:my-5 sm:leading-none lg:text-2xl xl:text-4xl transition-all visible translate-y-0 scale-100 opacity-100 text-gray-8f00">
-                    OKR Software that helps you to execute your strategies
-                </h2>
-                <p class="max-w-2xl mt-0 text-base text-left text-gray-600 duration-700 ease-out delay-300 transform md:text-center lg:text-left sm:mt-2 md:mt-0 sm:text-base lg:text-lg xl:text-xl transition-all visible translate-y-0 scale-100 opacity-100">
-                    Manage your OKRs, teams, and performance in one platform. Bridge the gap between strategy execution and teams using okri.io                
-                </p>
-                <div class="w-full mt-5 duration-700 ease-out transform delay-450 sm:mt-8 sm:flex sm:justify-center lg:justify-start sm:w-auto transition-all visible translate-y-0 opacity-100">
-                    <div class="sm:mt-0 sm:ml-3">
-                        <a href="#" class="flex items-center justify-center w-full px-8 py-3 text-base font-medium leading-6 text-white transition duration-150 ease-in-out bg-[#585a5c] border-2 border-transparent rounded-md hover:text-green-500 hover:bg-[#333638] focus:outline-none focus:shadow-outline-green focus:border-[#333638] md:py-4 md:text-lg md:px-10">
-                            Strategy Execution – Achieve More
-                        </a>
-                    </div>
+              <!-- <h2 class="text-sm font-semibold tracking-wide text-gray-700 uppercase duration-700 ease-out transform sm:text-base lg:text-sm xl:text-base transition-all visible translate-y-0 scale-100 opacity-100">Welcome to Wave</h2> -->
+              <h2
+                class="pb-2 mt-3 text-4xl font-extrabold leading-10 tracking-tight text-transparent duration-700 ease-out delay-150 transform bg-clip-text bg-gradient-to-r from-green-500 to-lime-400 scale-10 md:my-5 sm:leading-none lg:text-2xl xl:text-4xl transition-all visible translate-y-0 scale-100 opacity-100 text-gray-8f00">
+                OKR Software that helps you to execute your strategies
+              </h2>
+              <p
+                class="max-w-2xl mt-0 text-base text-left text-gray-600 duration-700 ease-out delay-300 transform md:text-center lg:text-left sm:mt-2 md:mt-0 sm:text-base lg:text-lg xl:text-xl transition-all visible translate-y-0 scale-100 opacity-100">
+                Manage your OKRs, teams, and performance in one platform. Bridge the gap between strategy execution and
+                teams using okri.io
+              </p>
+              <div
+                class="w-full mt-5 duration-700 ease-out transform delay-450 sm:mt-8 sm:flex sm:justify-center lg:justify-start sm:w-auto transition-all visible translate-y-0 opacity-100">
+                <div class="sm:mt-0 sm:ml-3">
+                  <a href="#"
+                    class="flex items-center justify-center w-full px-8 py-3 text-base font-medium leading-6 text-white transition duration-150 ease-in-out bg-[#585a5c] border-2 border-transparent rounded-md hover:text-green-500 hover:bg-[#333638] focus:outline-none focus:shadow-outline-green focus:border-[#333638] md:py-4 md:text-lg md:px-10">
+                    Strategy Execution – Achieve More
+                  </a>
                 </div>
+              </div>
             </div>
 
             <div class="flex w-full mb-16 lg:w-1/2 lg:mb-0">
 
-                <div class="relative object-contain duration-1000 delay-100 transform transition-all visible translate-y-0 opacity-100">
-                    <img src="assets/img/0f628526-83c0-4a0d-843f-8da291b68626.webp" class="rounded-xl shadow-md w-full max-w-3xl sm:w-auto">
-                </div>
+              <div
+                class="relative object-contain duration-1000 delay-100 transform transition-all visible translate-y-0 opacity-100">
+                <img src="assets/img/sh/2.png"
+                  class="rounded-xl shadow-md w-full max-w-3xl sm:w-auto">
+              </div>
 
             </div>
+          </div>
         </div>
-    </div>
-</div>
+      </div>
 
-<div class="container px-6 py-10 mx-auto">
-    <!-- <h1 class="text-3xl font-semibold text-gray-800 capitalize lg:text-4xl">From the blog</h1> -->
+      <div class="container px-6 py-10 mx-auto">
+        <!-- <h1 class="text-3xl font-semibold text-gray-800 capitalize lg:text-4xl">From the blog</h1> -->
 
-    <div class="mt-8 lg:-mx-6 lg:flex lg:items-center">
-        <img src="assets/img/0f628526-83c0-4a0d-843f-8da291b68626.webp" class="rounded-xl shadow-md w-full max-w-3xl sm:w-auto">
-        <!-- <img class="object-cover w-full lg:mx-6 lg:w-1/2 rounded-xl h-72 lg:h-96 shadow-md" src="assets/img/3e82c038-c7d4-4073-9a02-8e7426aa9432.webp"alt=""> -->
+        <div class="mt-8 lg:-mx-6 lg:flex lg:items-center">
+          <img src="assets/img/sh/1.png"
+            class="rounded-xl shadow-md w-full max-w-3xl sm:w-auto">
+          <!-- <img class="object-cover w-full lg:mx-6 lg:w-1/2 rounded-xl h-72 lg:h-96 shadow-md" src="assets/img/3e82c038-c7d4-4073-9a02-8e7426aa9432.webp"alt=""> -->
 
-        <div class="mt-6 lg:w-1/2 lg:mt-0 lg:mx-6 ">
-            <!-- <p class="text-sm text-blue-500 uppercase">category</p> -->
-
-            <h2 class="pb-2 mt-3 text-4xl font-extrabold leading-10 tracking-tight text-transparent duration-700 ease-out delay-150 transform bg-clip-text bg-gradient-to-r from-green-500 to-lime-400 scale-10 md:my-5 sm:leading-none lg:text-2xl xl:text-4xl transition-all visible translate-y-0 scale-100 opacity-100 text-gray-8f00">
-                Easy onboarding of your OKR Teams
+          <div class="mt-6 lg:w-1/2 lg:mt-0 lg:mx-6 ">
+            <h2
+              class="pb-2 mt-3 text-4xl font-extrabold leading-10 tracking-tight text-transparent duration-700 ease-out delay-150 transform bg-clip-text bg-gradient-to-r from-green-500 to-lime-400 scale-10 md:my-5 sm:leading-none lg:text-2xl xl:text-4xl transition-all visible translate-y-0 scale-100 opacity-100 text-gray-8f00">
+              Easy onboarding of your OKR Teams
             </h2>
 
-            <p class="max-w-2xl mt-0 text-base text-left text-gray-600 duration-700 ease-out delay-300 transform md:text-center lg:text-left sm:mt-2 md:mt-0 sm:text-base lg:text-lg xl:text-xl transition-all visible translate-y-0 scale-100 opacity-100">
-                okri.io makes it easy to deploy OKRs in your teams and organization. Achieve agile alignment and team engagement through an effective weekly check-in. Grow your business with this all-inclusive OKR tool.
+            <p
+              class="max-w-2xl mt-0 text-base text-left text-gray-600 duration-700 ease-out delay-300 transform md:text-center lg:text-left sm:mt-2 md:mt-0 sm:text-base lg:text-lg xl:text-xl transition-all visible translate-y-0 scale-100 opacity-100">
+              okri.io makes it easy to deploy OKRs in your teams and organization. Achieve agile alignment and team
+              engagement through an effective weekly check-in. Grow your business with this all-inclusive OKR tool.
             </p>
 
-            <div class="w-full mt-5 duration-700 ease-out transform delay-450 sm:mt-8 sm:flex sm:justify-center lg:justify-start sm:w-auto transition-all visible translate-y-0 opacity-100">
-                <div class="sm:mt-0 sm:ml-3">
-                    <a href="#" class="flex items-center justify-center w-full px-8 py-3 text-base font-medium leading-6 text-white transition duration-150 ease-in-out bg-[#585a5c] hover:bg-[#333638] focus:border-[#333638] border-2 border-transparent rounded-md hover:text-green-500 focus:outline-none focus:shadow-outline-green md:py-4 md:text-lg md:px-10">
-                        OKR Implementation – Made Easy
-                    </a>
-                </div>
+            <div
+              class="w-full mt-5 duration-700 ease-out transform delay-450 sm:mt-8 sm:flex sm:justify-center lg:justify-start sm:w-auto transition-all visible translate-y-0 opacity-100">
+              <div class="sm:mt-0 sm:ml-3">
+                <a href="#"
+                  class="flex items-center justify-center w-full px-8 py-3 text-base font-medium leading-6 text-white transition duration-150 ease-in-out bg-[#585a5c] hover:bg-[#333638] focus:border-[#333638] border-2 border-transparent rounded-md hover:text-green-500 focus:outline-none focus:shadow-outline-green md:py-4 md:text-lg md:px-10">
+                  OKR Implementation – Made Easy
+                </a>
+              </div>
             </div>
 
+          </div>
         </div>
-    </div>
-</div>
-</section>
+      </div>
+    </section>
 
-<!-- new containar -->
-<div class="container mx-auto bg-white p-4 lg:p-12">
-<div class="grid grid-cols-1 gap-8 lg:grid-cols-2">
-  <div class="overflow-hidden rounded-2xl bg-blue-50 p-4 lg:p-12">
-    <div class="flex items-center text-blue-500">
-      <p class="text-sm font-bold uppercase">Small Title</p>
+    <!-- new containar -->
+    <div class="container mx-auto bg-white p-4 lg:p-12">
+      <div class="grid grid-cols-1 gap-8 lg:grid-cols-2">
+        <div class="overflow-hidden rounded-2xl bg-[#f6f9ff] p-4 lg:p-12">
+          <div class="flex items-center text-transparent bg-clip-text bg-[#4284F3] ">
+            <p class="text-sm font-bold uppercase">Easy alignment of teams</p>
+          </div>
 
-      <svg xmlns="http://www.w3.org/2000/svg" class="ml-2 h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
-        <path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7" />
-      </svg>
-    </div>
+          <h2 class="mt-4 text-3xl font-semibold text-slate-800">
+            Align your teams towards your strategies
+          </h2>
 
-    <h2 class="mt-4 text-3xl font-semibold text-slate-800">This is an OKRI.io Feature</h2>
+          <p class="mt-4 text-lg text-slate-600">
+            Thrive transparency, alignment and break down silo effects in your teams and organization
+          </p>
 
-    <p class="mt-4 text-lg text-slate-600">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-
-    <div class="mt-12 flex transform items-center justify-center transition-transform duration-150 ease-in-out hover:scale-125">
-      <img src="assets/img/0f628526-83c0-4a0d-843f-8da291b68626.webp"  class="h-auto w-[550px] rounded-xl shadow-md">
-    </div>
-  </div>
-
-  <div class="overflow-hidden rounded-2xl bg-pink-50 p-4 lg:p-12">
-    <div class="flex items-center text-pink-500">
-      <p class="text-sm font-bold uppercase">Small Title</p>
-
-      <svg xmlns="http://www.w3.org/2000/svg" class="ml-2 h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
-        <path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7" />
-      </svg>
-    </div>
-
-    <h2 class="mt-4 text-3xl font-semibold text-slate-800">This is an OKRI.io Feature</h2>
-
-    <p class="mt-4 text-lg text-slate-600">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-
-    <div class="mt-12 flex transform items-center justify-center transition-transform duration-150 ease-in-out hover:scale-125">
-        <img src="assets/img/0f628526-83c0-4a0d-843f-8da291b68626.webp" class="h-auto w-[550px] rounded-xl shadow-md">
-    </div>
-  </div>
-
-  <div class="overflow-hidden rounded-2xl bg-green-50 p-4 lg:p-12">
-    <div class="flex items-center text-green-500">
-      <p class="text-sm font-bold uppercase">Small Title</p>
-
-      <svg xmlns="http://www.w3.org/2000/svg" class="ml-2 h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
-        <path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7" />
-      </svg>
-    </div>
-
-    <h2 class="mt-4 text-3xl font-semibold text-slate-800">This is an OKRI.io Feature</h2>
-
-    <p class="mt-4 text-lg text-slate-600">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-
-    <div class="mt-12 flex transform items-center justify-center transition-transform duration-150 ease-in-out hover:scale-125">
-        <img src="assets/img/0f628526-83c0-4a0d-843f-8da291b68626.webp"  class="h-auto w-[550px] rounded-xl shadow-md">
-    </div>
-  </div>
-
-  <div class="overflow-hidden rounded-2xl bg-purple-50 p-4 lg:p-12">
-    <div class="flex items-center text-purple-500">
-      <p class="text-sm font-bold uppercase">Small Title</p>
-
-      <svg xmlns="http://www.w3.org/2000/svg" class="ml-2 h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
-        <path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7" />
-      </svg>
-    </div>
-
-    <h2 class="mt-4 text-3xl font-semibold text-slate-800">This is an OKRI.io Feature</h2>
-
-    <p class="mt-4 text-lg text-slate-600">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-
-    <div class="mt-12 flex transform items-center justify-center transition-transform duration-150 ease-in-out hover:scale-125">
-        <img src="assets/img/0f628526-83c0-4a0d-843f-8da291b68626.webp"  class="h-auto w-[550px] rounded-xl shadow-md">
-    </div>
-  </div>
-</div>
-</div>
-
-
-<div class="relative flex flex-col justify-center overflow-hidden bg-white py-4 sm:py-12">
-<div class="mx-auto max-w-7xl rounded-3xl bg-[#f6f9ff] lg:p-20 md:p-15 sm:p-4 text-center">
-  <h2 class="text-3xl font-bold leading-tight text-gray-600">
-    Experience of <span class="bg-clip-text bg-gradient-to-r from-green-500 to-lime-400 tracking-tight text-transparent">1,000+</span> OKR rollouts
-</h2>
-  <p class="mt-5 text-xl leading-8 text-gray-600 px-lg-2">
-    Take advantage of this powerful agile goal setting system and thrive engagement, align teams towards your strategies, mission and vision and get things done effectively.
-  </p>
-  <div class="mt-6 flex items-center justify-center gap-4">
-    <button class="bg-[#585a5c] hover:bg-[#333638] focus:border-[#333638] flex items-center justify-center gap-2 rounded-md px-1 py-1 px-md-5 py-md-3 text-lg font-medium text-white">
-      <span>Schedule Demo</span>
-      <span
-        ><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
-          <path d="M6.00156 13.4016L4.60156 12.0016L8.60156 8.00156L4.60156 4.00156L6.00156 2.60156L11.4016 8.00156L6.00156 13.4016Z" fill="white" /></svg
-      ></span>
-    </button>
-    <button class="flex items-center justify-center gap-2 rounded-md border outline px-1 py-1 px-md-5 py-md-3 text-lg font-medium text-gray-600">
-      <span> See Pricing</span>
-      <span
-        ><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
-          <path d="M6.00156 13.4016L4.60156 12.0016L8.60156 8.00156L4.60156 4.00156L6.00156 2.60156L11.4016 8.00156L6.00156 13.4016Z" fill="gray" /></svg
-      ></span>
-    </button>
-  </div>
-</div>
-</div>
-
-<style>
-/*--------------------------------------------------------------
-# F.A.Q
---------------------------------------------------------------*/
-.faq {
-background: #f6f9ff;
-}
-
-
-.faq .faq-list ul {
-padding: 0;
-list-style: none;
-}
-
-.faq .faq-list li+li {
-margin-top: 15px;
-}
-
-.faq .faq-list li {
-padding: 20px;
-background: #fff;
-border-radius: 4px;
-position: relative;
-}
-
-.faq .faq-list a {
-display: block;
-position: relative;
-font-size: 16px;
-line-height: 24px;
-font-weight: 500;
-padding: 0 30px;
-outline: none;
-cursor: pointer;
-}
-
-.faq .faq-list .icon-help {
-font-size: 24px;
-position: absolute;
-right: 0;
-left: 20px;
-color: var(--color-primary);
-}
-
-.faq .faq-list .icon-show,
-.faq .faq-list .icon-close {
-font-size: 24px;
-position: absolute;
-right: 0;
-top: 0;
-}
-
-.faq .faq-list p {
-margin-bottom: 0;
-padding: 10px 0 0 0;
-}
-
-.faq .faq-list .icon-show {
-display: none;
-}
-
-.faq .faq-list a.collapsed {
-color: #343a40;
-}
-
-.faq .faq-list a.collapsed:hover {
-color: var(--color-primary);
-}
-
-.faq .faq-list a.collapsed .icon-show {
-display: inline-block;
-}
-
-.faq .faq-list a.collapsed .icon-close {
-display: none;
-}
-
-@media (max-width: 1200px) {
-.faq .faq-list {
-  padding: 0;
-}
-}
-
-</style>
-
-<!-- ======= F.A.Q Section ======= -->
-
-<section id="faq" class="faq">
-<div class="container aos-init aos-animate" data-aos="fade-up">
-  <div class="section-title">
-    <h2>Why leading teams choose okri.io</h2>
-  </div>
-    <div class="row">
-
-        <div class="col-lg-6" style="margin: auto ;">
-          <div class="faq-list">
-            <ul>
-              <li data-aos="fade-up">
-                <i class="bx bx-help-circle icon-help"></i> <a data-bs-toggle="collapse" class="collapse" data-bs-target="#faq-list-1">
-                  Easy Alignment of Teams
-                  <i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
-                <div id="faq-list-1" class="collapse show" data-bs-parent=".faq-list">
-                  <p>
-                    Thrive transparency, alignment and break down silo effects in your teams and organization. 
-                  </p>
-                </div>
-              </li>
-      
-              <li data-aos="fade-up" data-aos-delay="100">
-                <i class="bx bx-help-circle icon-help"></i> <a data-bs-toggle="collapse" data-bs-target="#faq-list-2" class="collapsed">
-                  Stay Focused
-                  <i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
-                <div id="faq-list-2" class="collapse" data-bs-parent=".faq-list">
-                  <p>
-                    Get things done via effective and engaging OKR check-ins with your teams.
-                  </p>
-                </div>
-              </li>
-      
-            </ul>
+          <div
+            class="mt-12 flex transform items-center justify-center transition-transform duration-150 ease-in-out hover:scale-125">
+            <img src="assets/img/sh/1.png"
+              class="h-auto w-[550px] rounded-xl shadow-md">
           </div>
         </div>
 
-        <div class="col-lg-6"><img src="https://flowyteam.com/front/v3/images/flowy-images/support.png" class="img-fluid" alt="" /></div>
+        <div class="overflow-hidden rounded-2xl bg-[#f6f9ff] p-4 lg:p-12">
+          <div class="flex items-center text-transparent bg-clip-text bg-[#4284F3] ">
+            <p class="text-sm font-bold uppercase">Stay focused</p>
+          </div>
 
+          <h2 class="mt-4 text-3xl font-semibold text-slate-800">
+            Have effective weekly check-ins
+          </h2>
+
+          <p class="mt-4 text-lg text-slate-600">
+            Resolve blockers in your weekly check-in meetings to get closer to your goal
+          </p>
+
+          <div
+            class="mt-12 flex transform items-center justify-center transition-transform duration-150 ease-in-out hover:scale-125">
+            <img src="assets/img/sh/5.png"
+              class="h-auto w-[550px] rounded-xl shadow-md">
+          </div>
+        </div>
+
+        <div class="overflow-hidden rounded-2xl bg-[#f6f9ff] p-4 lg:p-12">
+          <div class="flex items-center text-transparent bg-clip-text bg-[#4284F3] ">
+            <p class="text-sm font-bold uppercase">Get things done </p>
+          </div>
+
+          <h2 class="mt-4 text-3xl font-semibold text-slate-800">Have an effective execution plan</h2>
+
+          <p class="mt-4 text-lg text-slate-600">
+            Link your action plan to your Key Results
+          </p>
+
+          <div
+            class="mt-12 flex transform items-center justify-center transition-transform duration-150 ease-in-out hover:scale-125">
+            <img src="assets/img/sh/3.png"
+              class="h-auto w-[550px] rounded-xl shadow-md">
+          </div>
+        </div>
+
+        <div class="overflow-hidden rounded-2xl bg-[#f6f9ff] p-4 lg:p-12">
+          <div class="flex items-center text-transparent bg-clip-text bg-[#4284F3] ">
+            <p class="text-sm font-bold uppercase">Stay healthy</p>
+          </div>
+
+          <h2 class="mt-4 text-3xl font-semibold text-slate-800">
+            Use OKRs to make unhealthy KPIs healthy again
+          </h2>
+
+          <p class="mt-4 text-lg text-slate-600">
+            Keep a healthy relationship between KPIs and OKRs
+          </p>
+
+          <div
+            class="mt-12 flex transform items-center justify-center transition-transform duration-150 ease-in-out hover:scale-125">
+            <img src="assets/img/sh/4.png"
+              class="h-auto w-[550px] rounded-xl shadow-md">
+          </div>
+        </div>
+      </div>
     </div>
-  
-</div>
 
-    </main><!-- End #main -->
- <!-- Vendor JS Files -->
- <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
- <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/8.3.2/swiper-bundle.min.js"></script>
- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
 
- <!-- Main JS File -->
- <script src="assets/js/main.js"></script>
+    <div class="relative flex flex-col justify-center overflow-hidden bg-white py-4 sm:py-12">
+      <div class="mx-auto max-w-7xl rounded-3xl bg-[#f6f9ff] lg:p-20 md:p-15 sm:p-4 text-center">
+        <h2 class="text-3xl font-bold leading-tight text-gray-600">
+          Experience of <span
+            class="bg-clip-text bg-gradient-to-r from-green-500 to-lime-400 tracking-tight text-transparent">1,000+</span>
+          OKR rollouts
+        </h2>
+        <p class="mt-5 text-xl leading-8 text-gray-600 px-lg-2">
+          Take advantage of this powerful agile goal setting software and break silos and align teams cross-functional
+          and vertically.
+        </p>
+        <div class="mt-6 flex items-center justify-center gap-4">
+          <button
+            class="bg-[#585a5c] hover:bg-[#333638] focus:border-[#333638] flex items-center justify-center gap-2 rounded-md px-1 py-1 px-md-5 py-md-3 text-lg font-medium text-white">
+            <span>Schedule Demo</span>
+            <span><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
+                <path
+                  d="M6.00156 13.4016L4.60156 12.0016L8.60156 8.00156L4.60156 4.00156L6.00156 2.60156L11.4016 8.00156L6.00156 13.4016Z"
+                  fill="white" />
+              </svg></span>
+          </button>
+          <button
+            onclick="window.location.href='/price.html'"
+            class="flex items-center justify-center gap-2 rounded-md border outline px-1 py-1 px-md-5 py-md-3 text-lg font-medium text-gray-600">
+            <span> See Pricing</span>
+            <span><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
+                <path
+                  d="M6.00156 13.4016L4.60156 12.0016L8.60156 8.00156L4.60156 4.00156L6.00156 2.60156L11.4016 8.00156L6.00156 13.4016Z"
+                  fill="gray" />
+              </svg></span>
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <section class="w-full bg-[#f6f9ff] relative">
+      <div class="flex flex-col items-center px-8 py-12 mx-auto md:py-32 max-w-6xl sm:px-16 lg:px-32">
+
+        <div class="section-title">
+          <h2>Integrate with your favorite app 👇</h2>
+        </div>
+
+        
+      </div>
+    </section>
+
+    <style>
+      /*--------------------------------------------------------------
+# F.A.Q
+--------------------------------------------------------------*/
+      .faq {
+        background: #f6f9ff;
+      }
+
+
+      .faq .faq-list ul {
+        padding: 0;
+        list-style: none;
+      }
+
+      .faq .faq-list li+li {
+        margin-top: 15px;
+      }
+
+      .faq .faq-list li {
+        padding: 20px;
+        background: #fff;
+        border-radius: 4px;
+        position: relative;
+      }
+
+      .faq .faq-list a {
+        display: block;
+        position: relative;
+        font-size: 16px;
+        line-height: 24px;
+        font-weight: 500;
+        padding: 0 30px;
+        outline: none;
+        cursor: pointer;
+      }
+
+      .faq .faq-list .icon-help {
+        font-size: 24px;
+        position: absolute;
+        right: 0;
+        left: 20px;
+        color: var(--color-primary);
+      }
+
+      .faq .faq-list .icon-show,
+      .faq .faq-list .icon-close {
+        font-size: 24px;
+        position: absolute;
+        right: 0;
+        top: 0;
+      }
+
+      .faq .faq-list p {
+        margin-bottom: 0;
+        padding: 10px 0 0 0;
+      }
+
+      .faq .faq-list .icon-show {
+        display: none;
+      }
+
+      .faq .faq-list a.collapsed {
+        color: #343a40;
+      }
+
+      .faq .faq-list a.collapsed:hover {
+        color: var(--color-primary);
+      }
+
+      .faq .faq-list a.collapsed .icon-show {
+        display: inline-block;
+      }
+
+      .faq .faq-list a.collapsed .icon-close {
+        display: none;
+      }
+
+      @media (max-width: 1200px) {
+        .faq .faq-list {
+          padding: 0;
+        }
+      }
+    </style>
+
+    <!-- ======= F.A.Q Section ======= -->
+
+    <section id="faq" class="faq">
+      <div class="container aos-init aos-animate" data-aos="fade-up">
+        <div class="section-title">
+          <h2>Why leading teams choose okri.io</h2>
+        </div>
+        <div class="row">
+
+          <div class="col-lg-6" style="margin: auto ;">
+            <div class="faq-list">
+              <ul>
+                <li data-aos="fade-up">
+                  <i class="bx bx-help-circle icon-help"></i> <a data-bs-toggle="collapse" class="collapse"
+                    data-bs-target="#faq-list-1">
+                    Easy Alignment of Teams
+                    <i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
+                  <div id="faq-list-1" class="collapse show" data-bs-parent=".faq-list">
+                    <p>
+                      Thrive transparency, alignment and break down silo effects in your teams and organization.
+                    </p>
+                  </div>
+                </li>
+
+                <li data-aos="fade-up" data-aos-delay="100">
+                  <i class="bx bx-help-circle icon-help"></i> <a data-bs-toggle="collapse" data-bs-target="#faq-list-2"
+                    class="collapsed">
+                    Stay Focused
+                    <i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
+                  <div id="faq-list-2" class="collapse" data-bs-parent=".faq-list">
+                    <p>
+                      Focus everyone on the tasks that delivers the highest impact.
+                    </p>
+                  </div>
+                </li>
+
+              </ul>
+            </div>
+          </div>
+
+          <div class="col-lg-6"><img src="https://flowyteam.com/front/v3/images/flowy-images/support.png"
+              class="img-fluid" alt="" /></div>
+        </div>
+
+      </div>
+
+  </main><!-- End #main -->
+
+  <!-- Vendor JS Files -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/8.3.2/swiper-bundle.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"></script>
+
+  <!-- Main JS File -->
+  <script src="assets/js/main.js"></script>
 </body>
+
 </html>
-
-
