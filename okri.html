@@ -19,7 +19,7 @@
   <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
 
   <!--  Main CSS File -->
-  <link href="assets/css/style.css" rel="stylesheet">
+  <link href="assets/css/style-okri.css" rel="stylesheet">
 
   <!-- Tailwind cdn -->
   <link href="https://cdn.jsdelivr.net/npm/daisyui@2.31.0/dist/full.css" rel="stylesheet" type="text/css" />
@@ -62,148 +62,7 @@
 </head>
 
 <body>
-  <!-- ======= Hero Section ======= -->
-  <style>
-    /*--------------------------------------------------------------
-        # Hero Section
-        --------------------------------------------------------------*/
-    .hero {
-      width: 100%;
-      min-height: 100vh;
-      background: url("assets/img/okri-bg.jpeg") top center;
-      background-size: cover;
-      position: relative;
-      padding: 120px 0;
-      z-index: 3;
-    }
 
-    @media (min-width: 1034px) {
-      .hero:after {
-        position: absolute;
-        content: "";
-        width: 40%;
-        background: #343638;
-        top: 0;
-        bottom: 0;
-      }
-    }
-
-    .hero:before {
-      position: absolute;
-      content: "";
-      background: rgba(27, 47, 69, 0.6);
-      inset: 0;
-    }
-
-    @media (max-width: 1034px) {
-      .hero:before {
-        background: rgba(27, 47, 69, 0.7);
-      }
-    }
-
-    .hero .container {
-      z-index: 1;
-    }
-
-    @media (min-width: 1365px) {
-      .hero {
-        background-attachment: fixed;
-      }
-    }
-
-    .hero h2 {
-      margin: 0;
-      font-size: 48px;
-      font-weight: 700;
-      line-height: 1.2;
-      color: #fff;
-      font-family: var(--font-secondary);
-    }
-
-    .hero blockquote {
-      color: #fff;
-      padding-left: 20px;
-      font-size: 15px;
-      font-family: var(--font-default);
-      border-left: 2px solid var(--color-primary);
-      margin: 40px 0;
-    }
-
-    .btn-get-started {
-      font-weight: 500;
-      font-size: 14px;
-      letter-spacing: 1px;
-      display: inline-block;
-      padding: 12px 32px;
-      border-radius: 50px;
-      transition: 0.5s;
-      line-height: 1;
-      margin: 10px;
-      color: #fff !important;
-      -webkit-animation-delay: 0.8s;
-      animation-delay: 0.8s;
-      /* border: 2px solid #68A4C4; */
-      background: linear-gradient(241deg, #34a853b3 0%, rgb(126, 189, 0) 100%) !important;
-      /* box-shadow: 0px 5px 25px rgba(65, 84, 241, 0.3); */
-    }
-
-    .btn-get-started-outlite {
-      font-weight: 500;
-      font-size: 14px;
-      letter-spacing: 1px;
-      display: inline-block;
-      padding: 12px 15px;
-      border-radius: 50px;
-      transition: 0.5s;
-      line-height: 1;
-      margin: 10px;
-      color: #fff !important;
-      -webkit-animation-delay: 0.8s;
-      animation-delay: 0.8s;
-      border: 2px solid #7cbb00;
-      background: transparent;
-    }
-
-    .hero .btn-get-started:hover {
-      background: rgba(255, 255, 255, 0.8);
-    }
-
-    .hero .btn-watch-video {
-      font-size: 16px;
-      transition: 0.5s;
-      margin-left: 25px;
-      color: rgba(255, 255, 255, 0.7);
-      font-weight: 600;
-    }
-
-    .hero .btn-watch-video i {
-      color: var(--color-primary);
-      font-size: 32px;
-      transition: 0.3s;
-      line-height: 0;
-      margin-right: 8px;
-    }
-
-    .hero .btn-watch-video:hover {
-      color: #fff;
-    }
-
-    .hero .btn-watch-video:hover i {
-      color: #82cbed;
-    }
-
-    @media (max-width: 640px) {
-      .hero h2 {
-        font-size: 36px;
-        line-height: 1;
-      }
-
-      .hero .btn-get-started,
-      .hero .btn-watch-video {
-        font-size: 13px;
-      }
-    }
-  </style>
   <section id="hero-2" class="hero d-flex align-items-center">
     <div class="container">
       <div class="row">
@@ -302,39 +161,8 @@
       </div>
     </section><!-- End Services Section -->
 
-    <style>
-      .features-1 .feature-box {
-        padding: 24px 20px;
-        box-shadow: 0px 0 30px rgba(1, 41, 112, 0.08);
-        transition: 0.3s;
-        height: 100%;
-      }
-
-      .features-1 .feature-box h3 {
-        font-size: 18px;
-        color: var(--color-default);
-        font-weight: 500;
-        margin: 0;
-      }
-
-      .features-1 .feature-box i {
-        line-height: 0;
-        background: #ecf3ff;
-        padding: 8px;
-        margin-right: 10px;
-        font-size: 2.2rem;
-        border-radius: 25px;
-        transition: 0.3s;
-        color: #4284F3;
-      }
-
-      .features-1 .feature-box:hover i {
-        background: #e6eeff;
-        color: #4284F3;
-      }
-    </style>
     <section id="features" class="features-1">
-      <div class="relative max-w-screen-xl px-4 py-8 mx-auto">
+      <div class="relative max-w-screen-xl px-4 py-4 mx-auto">
         <div class="section-title">
           <h2>Features for High Performing OKR Teams </h2>
         </div>
@@ -342,33 +170,9 @@
         <div class="grid items-start grid-cols-1 gap-2 md:grid-cols-2">
           <div class="grid grid-cols-1 gap-1 md:grid-cols-1">
             <img src="assets/img/okr-app.png" class="object-contain w-full rounded-xl mb-5" />
-
-            <div class="grid grid-cols-2 gap-2">
-              <img src="assets/img/0f628526-83c0-4a0d-843f-8da291b68626.webp"
-                class="object-contain w-full rounded-xl mb-5" />
-
-              <img src="assets/img/0f628526-83c0-4a0d-843f-8da291b68626.webp"
-                class="object-contain w-full rounded-xl mb-5" />
-
-              <img src="assets/img/0f628526-83c0-4a0d-843f-8da291b68626.webp"
-                class="object-contain w-full rounded-xl mb-5" />
-
-              <img src="assets/img/0f628526-83c0-4a0d-843f-8da291b68626.webp"
-                class="object-contain w-full rounded-xl mb-5" />
-            </div>
           </div>
 
-          <div class="sticky top-50">
-
-            <!-- <div class="flex justify-between mt-8">
-        <div>
-          <h1 class="pb-2 mt-3 text-4xl font-extrabold leading-10 tracking-tight text-transparent duration-700 ease-out delay-150 transform bg-clip-text bg-gradient-to-r from-blue-600 via-blue-500 to-purple-600 scale-10 md:my-5 sm:leading-none lg:text-xl xl:text-6xl transition-all visible translate-y-0 scale-100 opacity-100">
-            Successful implementation starts with the right support
-          </h1>
-        </div>
-      </div> -->
-
-
+          <div class=" top-50">
 
             <div class="col-lg-12 mt-5 mt-lg-0 d-flex">
               <div class="row align-self-center gy-4">
@@ -425,7 +229,6 @@
             <div
               class="flex flex-col items-start w-full mb-16 md:items-center lg:pr-12 lg:items-start lg:w-1/2 lg:mb-0">
 
-              <!-- <h2 class="text-sm font-semibold tracking-wide text-gray-700 uppercase duration-700 ease-out transform sm:text-base lg:text-sm xl:text-base transition-all visible translate-y-0 scale-100 opacity-100">Welcome to Wave</h2> -->
               <h2
                 class="pb-2 mt-3 text-4xl font-extrabold leading-10 tracking-tight text-transparent duration-700 ease-out delay-150 transform bg-clip-text bg-gradient-to-r from-green-500 to-lime-400 scale-10 md:my-5 sm:leading-none lg:text-2xl xl:text-4xl transition-all visible translate-y-0 scale-100 opacity-100 text-gray-8f00">
                 OKR Software that helps you to execute your strategies
@@ -450,8 +253,7 @@
 
               <div
                 class="relative object-contain duration-1000 delay-100 transform transition-all visible translate-y-0 opacity-100">
-                <img src="assets/img/sh/2.png"
-                  class="rounded-xl shadow-md w-full max-w-3xl sm:w-auto">
+                <img src="assets/img/sh/2.png" class="rounded-xl shadow-md w-full max-w-3xl sm:w-auto">
               </div>
 
             </div>
@@ -463,8 +265,7 @@
         <!-- <h1 class="text-3xl font-semibold text-gray-800 capitalize lg:text-4xl">From the blog</h1> -->
 
         <div class="mt-8 lg:-mx-6 lg:flex lg:items-center">
-          <img src="assets/img/sh/1.png"
-            class="rounded-xl shadow-md w-full max-w-3xl sm:w-auto">
+          <img src="assets/img/sh/1.png" class="rounded-xl shadow-md w-full max-w-3xl sm:w-auto">
           <!-- <img class="object-cover w-full lg:mx-6 lg:w-1/2 rounded-xl h-72 lg:h-96 shadow-md" src="assets/img/3e82c038-c7d4-4073-9a02-8e7426aa9432.webp"alt=""> -->
 
           <div class="mt-6 lg:w-1/2 lg:mt-0 lg:mx-6 ">
@@ -512,8 +313,7 @@
 
           <div
             class="mt-12 flex transform items-center justify-center transition-transform duration-150 ease-in-out hover:scale-125">
-            <img src="assets/img/sh/1.png"
-              class="h-auto w-[550px] rounded-xl shadow-md">
+            <img src="assets/img/sh/1.png" class="h-auto w-[550px] rounded-xl shadow-md">
           </div>
         </div>
 
@@ -532,8 +332,7 @@
 
           <div
             class="mt-12 flex transform items-center justify-center transition-transform duration-150 ease-in-out hover:scale-125">
-            <img src="assets/img/sh/5.png"
-              class="h-auto w-[550px] rounded-xl shadow-md">
+            <img src="assets/img/sh/5.png" class="h-auto w-[550px] rounded-xl shadow-md">
           </div>
         </div>
 
@@ -550,8 +349,7 @@
 
           <div
             class="mt-12 flex transform items-center justify-center transition-transform duration-150 ease-in-out hover:scale-125">
-            <img src="assets/img/sh/3.png"
-              class="h-auto w-[550px] rounded-xl shadow-md">
+            <img src="assets/img/sh/3.png" class="h-auto w-[550px] rounded-xl shadow-md">
           </div>
         </div>
 
@@ -570,8 +368,7 @@
 
           <div
             class="mt-12 flex transform items-center justify-center transition-transform duration-150 ease-in-out hover:scale-125">
-            <img src="assets/img/sh/4.png"
-              class="h-auto w-[550px] rounded-xl shadow-md">
+            <img src="assets/img/sh/4.png" class="h-auto w-[550px] rounded-xl shadow-md">
           </div>
         </div>
       </div>
@@ -599,8 +396,7 @@
                   fill="white" />
               </svg></span>
           </button>
-          <button
-            onclick="window.location.href='https://akram-tello.github.io/OKRi/price.html'"
+          <button onclick="window.location.href='https://akram-tello.github.io/OKRi/price.html'"
             class="flex items-center justify-center gap-2 rounded-md border outline px-1 py-1 px-md-5 py-md-3 text-lg font-medium text-gray-600">
             <span> See Pricing</span>
             <span><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
@@ -620,93 +416,9 @@
           <h2>Integrate with your favorite app 👇</h2>
         </div>
 
-        
+
       </div>
     </section>
-
-    <style>
-      /*--------------------------------------------------------------
-# F.A.Q
---------------------------------------------------------------*/
-      .faq {
-        background: #f6f9ff;
-      }
-
-
-      .faq .faq-list ul {
-        padding: 0;
-        list-style: none;
-      }
-
-      .faq .faq-list li+li {
-        margin-top: 15px;
-      }
-
-      .faq .faq-list li {
-        padding: 20px;
-        background: #fff;
-        border-radius: 4px;
-        position: relative;
-      }
-
-      .faq .faq-list a {
-        display: block;
-        position: relative;
-        font-size: 16px;
-        line-height: 24px;
-        font-weight: 500;
-        padding: 0 30px;
-        outline: none;
-        cursor: pointer;
-      }
-
-      .faq .faq-list .icon-help {
-        font-size: 24px;
-        position: absolute;
-        right: 0;
-        left: 20px;
-        color: var(--color-primary);
-      }
-
-      .faq .faq-list .icon-show,
-      .faq .faq-list .icon-close {
-        font-size: 24px;
-        position: absolute;
-        right: 0;
-        top: 0;
-      }
-
-      .faq .faq-list p {
-        margin-bottom: 0;
-        padding: 10px 0 0 0;
-      }
-
-      .faq .faq-list .icon-show {
-        display: none;
-      }
-
-      .faq .faq-list a.collapsed {
-        color: #343a40;
-      }
-
-      .faq .faq-list a.collapsed:hover {
-        color: var(--color-primary);
-      }
-
-      .faq .faq-list a.collapsed .icon-show {
-        display: inline-block;
-      }
-
-      .faq .faq-list a.collapsed .icon-close {
-        display: none;
-      }
-
-      @media (max-width: 1200px) {
-        .faq .faq-list {
-          padding: 0;
-        }
-      }
-    </style>
 
     <!-- ======= F.A.Q Section ======= -->
 
